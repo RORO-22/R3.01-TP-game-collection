@@ -1,0 +1,127 @@
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #181623;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Conteneur principal */
+form {
+    background-color: #252233;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Champs de saisie */
+form input[type="text"],
+form input[type="date"],
+form input[type="url"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e1a2e;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+form textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Boutons radio et checkbox */
+form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+/* Section des plateformes */
+form div label {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    display: inline;
+}
+
+/* Bouton */
+form button {
+    display: block;
+    width: 100%;
+    background-color: #5c5cff;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+form button:hover {
+    background-color: #4a4adc;
+}
+
+/* Style des placeholders */
+form input::placeholder,
+form textarea::placeholder {
+    color: #888888;
+    font-size: 12px;
+}
+
+/* Ajustement des marges */
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+/* Alignement des checkboxes */
+form div.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form div.checkbox-group label {
+    display: flex;
+    align-items: center;
+}
